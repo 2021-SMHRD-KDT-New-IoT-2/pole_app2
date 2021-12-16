@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.example.projectfile.Model.ImpactVO;
+
 import java.util.ArrayList;
 
 public class Adapter_Impact extends BaseAdapter {

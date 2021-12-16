@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.example.projectfile.Model.TiltVO;
+
 import java.util.ArrayList;
 
 public class Adapter_Tilt extends BaseAdapter {

@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.projectfile.Model.ListVO;
+
 import java.util.ArrayList;
 
 public class List extends AppCompatActivity {
@@ -27,9 +29,9 @@ public class List extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list);
 
-        Adapter adapter;
+        List_Adapter listAdapter;
 
-        adapter = new Adapter();
+        listAdapter = new List_Adapter();
 
         searchView = findViewById(R.id.searchView);
         tv_list = findViewById(R.id.tv_list);
@@ -37,22 +39,22 @@ public class List extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.listView);
         // 키보드 제어 (키보드 보이기)
         imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE); // 입력 방법을 관리
-        listView.setAdapter(adapter);
+        listView.setAdapter(listAdapter);
 
-        adapter.addItem("전주 번호", "담당 사업소", "위치");
-        adapter.addItem("1001", "동구 지사", "풍암동 22번지");
-        adapter.addItem("1002", "서구 지사", "금호동 11번지");
-        adapter.addItem("1003", "남구 지사", "봉선동 32번지");
-        adapter.addItem("1004", "북구 지사", "지산동 66번지");
-        adapter.addItem("", "", "");
-        adapter.addItem("", "", "");
-        adapter.addItem("", "", "");
-        adapter.addItem("", "", "");
-        adapter.addItem("", "", "");
-        adapter.addItem("", "", "");
-        adapter.addItem("", "", "");
-        adapter.addItem("", "", "");
-        adapter.addItem("", "", "");
+        listAdapter.addItem("전주 번호", "담당 사업소", "위치");
+        listAdapter.addItem("1001", "동구 지사", "풍암동 22번지");
+        listAdapter.addItem("1002", "서구 지사", "금호동 11번지");
+        listAdapter.addItem("1003", "남구 지사", "봉선동 32번지");
+        listAdapter.addItem("1004", "북구 지사", "지산동 66번지");
+        listAdapter.addItem("", "", "");
+        listAdapter.addItem("", "", "");
+        listAdapter.addItem("", "", "");
+        listAdapter.addItem("", "", "");
+        listAdapter.addItem("", "", "");
+        listAdapter.addItem("", "", "");
+        listAdapter.addItem("", "", "");
+        listAdapter.addItem("", "", "");
+        listAdapter.addItem("", "", "");
 
         showDialog.setOnClickListener(new View.OnClickListener() {
             @Override
