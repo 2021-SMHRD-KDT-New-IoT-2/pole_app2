@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 public class Popup extends Activity {
 
+    // push 확인
+
     TextView tv;
     Button btn_close, btn_confirm;
 
