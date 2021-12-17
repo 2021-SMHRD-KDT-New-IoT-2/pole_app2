@@ -1,4 +1,4 @@
-package com.example.projectfile;
+package com.example.projectfile.Controller;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,14 +7,15 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.projectfile.Model.TiltVO;
+import com.example.projectfile.Model.MotionVO;
+import com.example.projectfile.R;
 
 import java.util.ArrayList;
 
-public class Adapter_Tilt extends BaseAdapter {
+public class Adapter_Motion extends BaseAdapter {
 
-    public ArrayList<TiltVO> list = new ArrayList<TiltVO>();
-    public Adapter_Tilt(){
+    public ArrayList<MotionVO> list = new ArrayList<MotionVO>();
+    public Adapter_Motion(){
 
     }
 
@@ -49,19 +50,19 @@ public class Adapter_Tilt extends BaseAdapter {
         TextView content = (TextView) convertView.findViewById(R.id.content);
         TextView day = (TextView) convertView.findViewById(R.id.day);
 
-        TiltVO aVO = list.get(position);
+        MotionVO bVO = list.get(position);
 
-        sensor_value.setText(aVO.getTilt()+"");
-        content.setText(aVO.getContent()+"");
-        day.setText(aVO.getDay());
+        sensor_value.setText(bVO.getMotion()+"");
+        content.setText(bVO.getContent()+"");
+        day.setText(bVO.getDay());
 
         return convertView;
     }
 
-    public void addItem(int tilt, String content, String day){
-        TiltVO item = new TiltVO();
+    public void addItem(int motion, String content, String day){
+        MotionVO item = new MotionVO();
 
-        item.setTilt(tilt);
+        item.setMotion(motion);
         item.setContent(content);
         item.setDay(day);
 

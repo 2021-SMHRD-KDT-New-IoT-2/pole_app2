@@ -1,4 +1,4 @@
-package com.example.projectfile;
+package com.example.projectfile.View;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +11,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.projectfile.Controller.List_Adapter;
 import com.example.projectfile.Model.ListVO;
+import com.example.projectfile.R;
+import com.example.projectfile.Controller.Thread;
 
 import java.util.ArrayList;
 

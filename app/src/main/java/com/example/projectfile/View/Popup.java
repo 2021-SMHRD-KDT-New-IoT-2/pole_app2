@@ -1,4 +1,4 @@
-package com.example.projectfile;
+package com.example.projectfile.View;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.projectfile.R;
 
 public class Popup extends Activity {
 
@@ -46,7 +48,7 @@ public class Popup extends Activity {
         btn_confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Popup.this, Notice.class);
+                Intent intent = new Intent(Popup.this, Notice_alarm.class);
                 intent.putExtra("num",a);
                 intent.putExtra("bgColor","red");
                 Log.d("테스트1", a);

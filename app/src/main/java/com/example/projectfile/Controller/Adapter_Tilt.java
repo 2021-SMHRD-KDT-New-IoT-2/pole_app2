@@ -1,4 +1,4 @@
-package com.example.projectfile;
+package com.example.projectfile.Controller;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,14 +7,15 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.projectfile.Model.ImpactVO;
+import com.example.projectfile.Model.TiltVO;
+import com.example.projectfile.R;
 
 import java.util.ArrayList;
 
-public class Adapter_Impact extends BaseAdapter {
+public class Adapter_Tilt extends BaseAdapter {
 
-    public ArrayList<ImpactVO> list = new ArrayList<ImpactVO>();
-    public Adapter_Impact(){
+    public ArrayList<TiltVO> list = new ArrayList<TiltVO>();
+    public Adapter_Tilt(){
 
     }
 
@@ -49,23 +50,22 @@ public class Adapter_Impact extends BaseAdapter {
         TextView content = (TextView) convertView.findViewById(R.id.content);
         TextView day = (TextView) convertView.findViewById(R.id.day);
 
-        ImpactVO cVO = list.get(position);
+        TiltVO aVO = list.get(position);
 
-        sensor_value.setText(cVO.getImpact()+"");
-        content.setText(cVO.getContent()+"");
-        day.setText(cVO.getDay());
+        sensor_value.setText(aVO.getTilt()+"");
+        content.setText(aVO.getContent()+"");
+        day.setText(aVO.getDay());
 
         return convertView;
     }
 
-    public void addItem(int impact, String content, String day){
-        ImpactVO item = new ImpactVO();
+    public void addItem(int tilt, String content, String day){
+        TiltVO item = new TiltVO();
 
-        item.setImpact(impact);
+        item.setTilt(tilt);
         item.setContent(content);
         item.setDay(day);
 
         list.add(item);
     }
-
 }

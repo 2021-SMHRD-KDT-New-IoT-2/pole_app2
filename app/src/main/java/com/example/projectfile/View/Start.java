@@ -1,4 +1,4 @@
-package com.example.projectfile;
+package com.example.projectfile.View;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.projectfile.R;
 
 public class Start extends AppCompatActivity {
 
