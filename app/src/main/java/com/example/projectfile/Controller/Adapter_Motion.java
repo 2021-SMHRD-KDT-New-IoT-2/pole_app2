@@ -1,4 +1,4 @@
-package com.example.projectfile;
+package com.example.projectfile.Controller;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.example.projectfile.Model.MotionVO;
+import com.example.projectfile.R;
 
 import java.util.ArrayList;
 

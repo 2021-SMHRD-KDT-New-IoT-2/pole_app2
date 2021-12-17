@@ -1,4 +1,4 @@
-package com.example.projectfile;
+package com.example.projectfile.Controller;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,13 +7,16 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.example.projectfile.Model.ListVO;
+import com.example.projectfile.R;
+
 import java.util.ArrayList;
 
-public class Adapter extends BaseAdapter {
+public class List_Adapter extends BaseAdapter {
 
     public ArrayList<ListVO> listViewItemList = new ArrayList<ListVO>();
 
-    public Adapter(){
+    public List_Adapter(){
 
     }
 

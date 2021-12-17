@@ -1,4 +1,4 @@
-package com.example.projectfile;
+package com.example.projectfile.Controller;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +16,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.projectfile.R;
+import com.example.projectfile.View.Popup;
 
 import org.json.JSONArray;
 import org.json.JSONException;

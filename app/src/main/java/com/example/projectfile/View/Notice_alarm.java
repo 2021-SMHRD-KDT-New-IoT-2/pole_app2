@@ -1,4 +1,4 @@
-package com.example.projectfile;
+package com.example.projectfile.View;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -21,6 +21,10 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.projectfile.Controller.Adapter_Impact;
+import com.example.projectfile.Controller.Adapter_Motion;
+import com.example.projectfile.Controller.Adapter_Tilt;
+import com.example.projectfile.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -30,7 +34,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Notice extends AppCompatActivity {
+public class Notice_alarm extends AppCompatActivity {
 
     Button btn_tilt,btn_motion,btn_impact;
     ListView lv_tilt,lv_motion,lv_impact;

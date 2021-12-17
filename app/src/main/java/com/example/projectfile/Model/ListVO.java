@@ -1,4 +1,4 @@
-package com.example.projectfile;
+package com.example.projectfile.Model;
 
 public class ListVO {
     String number;
