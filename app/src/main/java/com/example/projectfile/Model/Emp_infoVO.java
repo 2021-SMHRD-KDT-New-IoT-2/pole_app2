@@ -1,15 +1,15 @@
 package com.example.projectfile.Model;
 
-import java.sql.Date;
+import java.io.Serializable;
 
-public class emp_infoVO {
+public class Emp_infoVO implements Serializable {
 
     private String emp_id;
     private String emp_pw;
     private String emp_name;
     private String emp_office;
     private String emp_phone;
-    private Date emp_joindate;
+    private String emp_joindate;
     private String admin_yesno;
 
     public String getEmp_id() {
@@ -52,11 +52,11 @@ public class emp_infoVO {
         this.emp_phone = emp_phone;
     }
 
-    public Date getEmp_joindate() {
+    public String getEmp_joindate() {
         return emp_joindate;
     }
 
-    public void setEmp_joindate(Date emp_joindate) {
+    public void setEmp_joindate(String emp_joindate) {
         this.emp_joindate = emp_joindate;
     }
 
@@ -68,7 +68,7 @@ public class emp_infoVO {
         this.admin_yesno = admin_yesno;
     }
 
-    public emp_infoVO(String emp_id, String emp_pw, String emp_name, String emp_office, String emp_phone, Date emp_joindate, String admin_yesno) {
+    public Emp_infoVO(String emp_id, String emp_pw, String emp_name, String emp_office, String emp_phone, String emp_joindate, String admin_yesno) {
         this.emp_id = emp_id;
         this.emp_pw = emp_pw;
         this.emp_name = emp_name;
@@ -79,12 +79,12 @@ public class emp_infoVO {
     }
 
 
-    public emp_infoVO() {
+    public Emp_infoVO() {
 
     }
 
 
-    public emp_infoVO(String emp_id, String emp_pw, String emp_name, String emp_office, String emp_phone, String admin_yesno) {
+    public Emp_infoVO(String emp_id, String emp_pw, String emp_name, String emp_office, String emp_phone, String admin_yesno) {
         this.emp_id = emp_id;
         this.emp_pw = emp_pw;
         this.emp_name = emp_name;
@@ -95,7 +95,7 @@ public class emp_infoVO {
 
 
 
-    public emp_infoVO(String emp_id, String emp_name, String emp_office, String emp_phone, String admin_yesno) {
+    public Emp_infoVO(String emp_id, String emp_name, String emp_office, String emp_phone, String admin_yesno) {
         this.emp_id = emp_id;
         this.emp_name = emp_name;
         this.emp_office = emp_office;
