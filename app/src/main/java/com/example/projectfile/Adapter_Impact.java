@@ -54,6 +54,7 @@ public class Adapter_Impact extends BaseAdapter {
         day.setText(cVO.getDay());
 
         return convertView;
+
     }
 
     public void addItem(int impact, String content, String day){
