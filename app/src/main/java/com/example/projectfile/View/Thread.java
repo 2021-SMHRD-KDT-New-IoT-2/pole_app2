@@ -1,8 +1,10 @@
-package com.example.projectfile.Controller;
+package com.example.projectfile.View;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,7 +19,6 @@ import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.projectfile.R;
-import com.example.projectfile.View.Popup;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,12 +29,16 @@ import java.util.Map;
 
 public class Thread extends AppCompatActivity {
 
+    Button btn_close2;
+
     //서버로 요청하는 객체
     private RequestQueue queue;
     //서버로 요청시 필요한 정보를 담는 객체
     private StringRequest stringRequest;
     //클라이언트를 판별하는 값
     private String TAG = "main";
+
+    String ip = "http://172.30.1.22:8087/AndroidServer";
 
     boolean popupCheck = true;
     int tilt_check=0;
@@ -45,8 +50,19 @@ public class Thread extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.thread);
 
+        btn_close2 = findViewById(R.id.btn_close2);
+
         java.lang.Thread thread = new java.lang.Thread(new ChatThread(this));
         thread.start();
+
+        btn_close2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Thread.this, List.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     public class ChatThread implements Runnable{
@@ -71,7 +87,7 @@ public class Thread extends AppCompatActivity {
         // Volley Lib 새로운 요청객체 생성
         queue = Volley.newRequestQueue(this);
         // 서버에 요청할 주소(cmd : ipconfig, eclips : servers : HTTP/1.1)
-        String url = "http://121.147.0.157:8087/AndroidServer/kgwList";
+        String url = ip+"/kgwList";
 
         // 요청 문자열 저장
         stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {

@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".View.List">
 
-    <Button
-        android:id="@+id/showDialog"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_1"
-        app:layout_constraintStart_toEndOf="@+id/btn_1"
-        app:layout_constraintTop_toTopOf="@+id/btn_1" />
-
     <TextView
         android:id="@+id/tv_list"
         android:layout_width="wrap_content"
@@ -49,16 +39,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo1" />
 
-    <Button
-        android:id="@+id/btn_1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_list"
-        app:layout_constraintStart_toEndOf="@+id/tv_list"
-        app:layout_constraintTop_toTopOf="@+id/tv_list" />
-
     <SearchView
         android:id="@+id/searchView"
         android:layout_width="0dp"
@@ -67,6 +47,26 @@
         android:queryHint="검색어를 입력해주세요"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img1"/>
+        app:layout_constraintTop_toBottomOf="@+id/img1" />
+
+    <ImageButton
+        android:id="@+id/showDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_plus"
+        app:layout_constraintStart_toEndOf="@+id/btn_plus"
+        app:layout_constraintTop_toTopOf="@+id/btn_plus"
+        app:srcCompat="@android:drawable/ic_popup_reminder" />
+
+    <ImageButton
+        android:id="@+id/btn_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_list"
+        app:layout_constraintStart_toEndOf="@+id/tv_list"
+        app:layout_constraintTop_toTopOf="@+id/tv_list"
+        app:srcCompat="@android:drawable/ic_input_add" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

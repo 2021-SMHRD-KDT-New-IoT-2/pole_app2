@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -14,13 +14,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.projectfile.Controller.List_Adapter;
 import com.example.projectfile.Model.ListVO;
 import com.example.projectfile.R;
-import com.example.projectfile.Controller.Thread;
 
 import java.util.ArrayList;
 
 public class List extends AppCompatActivity {
 
-    Button showDialog;
+    ImageButton btn_plus, showDialog;
     ArrayList<ListVO> items = new ArrayList<ListVO>();
     TextView tv_list;
     ListView listView;
@@ -38,6 +37,7 @@ public class List extends AppCompatActivity {
 
         searchView = findViewById(R.id.searchView);
         tv_list = findViewById(R.id.tv_list);
+        btn_plus = findViewById(R.id.btn_plus);
         showDialog = findViewById(R.id.showDialog);
         listView = (ListView) findViewById(R.id.listView);
         // 키보드 제어 (키보드 보이기)
@@ -58,6 +58,16 @@ public class List extends AppCompatActivity {
         listAdapter.addItem("", "", "");
         listAdapter.addItem("", "", "");
         listAdapter.addItem("", "", "");
+
+        btn_plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(List.this, Enrollment.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
         showDialog.setOnClickListener(new View.OnClickListener() {
             @Override

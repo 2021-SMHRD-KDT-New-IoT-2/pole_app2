@@ -1,5 +1,7 @@
 package com.example.projectfile.Model;
 
+import java.util.ArrayList;
+
 public class ListVO {
     String number;
     String business;
@@ -47,4 +49,5 @@ public class ListVO {
                 ", location='" + location + '\'' +
                 '}';
     }
+
 }

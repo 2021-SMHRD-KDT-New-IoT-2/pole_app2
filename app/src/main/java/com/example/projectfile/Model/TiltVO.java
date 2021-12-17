@@ -8,6 +8,7 @@ public class TiltVO {
 
     public TiltVO(int tilt, String content, String day) {
         this.tilt = tilt;
+        this.content = content;
         this.day = day;
     }
     public TiltVO(){
@@ -38,27 +39,4 @@ public class TiltVO {
         this.day = day;
     }
 
-    //    public int getSensora() {
-//        return tilt;
-//    }
-//
-//    public void setSensora(int sensora) {
-//        this.tilt = sensora;
-//    }
-//
-//    public String getContent() {
-//        return content;
-//    }
-//
-//    public void setContent(String content) {
-//        this.content = content;
-//    }
-//
-//    public String getDay() {
-//        return day;
-//    }
-//
-//    public void setDay(String day) {
-//        this.day = day;
-//    }
 }

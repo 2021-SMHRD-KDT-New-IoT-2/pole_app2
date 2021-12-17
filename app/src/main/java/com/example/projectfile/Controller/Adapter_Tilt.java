@@ -50,11 +50,11 @@ public class Adapter_Tilt extends BaseAdapter {
         TextView content = (TextView) convertView.findViewById(R.id.content);
         TextView day = (TextView) convertView.findViewById(R.id.day);
 
-        TiltVO aVO = list.get(position);
+        TiltVO tiltVO = list.get(position);
 
-        sensor_value.setText(aVO.getTilt()+"");
-        content.setText(aVO.getContent()+"");
-        day.setText(aVO.getDay());
+        sensor_value.setText(tiltVO.getTilt()+"");
+        content.setText(tiltVO.getContent()+"");
+        day.setText(tiltVO.getDay());
 
         return convertView;
     }

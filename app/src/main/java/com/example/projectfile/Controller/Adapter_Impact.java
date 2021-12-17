@@ -50,11 +50,11 @@ public class Adapter_Impact extends BaseAdapter {
         TextView content = (TextView) convertView.findViewById(R.id.content);
         TextView day = (TextView) convertView.findViewById(R.id.day);
 
-        ImpactVO cVO = list.get(position);
+        ImpactVO impactVO = list.get(position);
 
-        sensor_value.setText(cVO.getImpact()+"");
-        content.setText(cVO.getContent()+"");
-        day.setText(cVO.getDay());
+        sensor_value.setText(impactVO.getImpact()+"");
+        content.setText(impactVO.getContent()+"");
+        day.setText(impactVO.getDay());
 
         return convertView;
 

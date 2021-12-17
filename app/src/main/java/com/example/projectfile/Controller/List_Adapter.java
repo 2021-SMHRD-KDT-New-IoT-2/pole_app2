@@ -5,14 +5,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.projectfile.Model.ListVO;
 import com.example.projectfile.R;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 public class List_Adapter extends BaseAdapter {
+
+//    private TextView number;
+//    private TextView business;
+//    private TextView location;
 
     public ArrayList<ListVO> listViewItemList = new ArrayList<ListVO>();
 
@@ -47,7 +55,13 @@ public class List_Adapter extends BaseAdapter {
         business.setText(listViewItem.getBusiness());
         location.setText(listViewItem.getLocation());
 
-        //여기까지
+//        LinearLayout cmdArea = convertView.findViewById(R.id.cmdArea);
+//        cmdArea.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(v.getContext(), listViewItemList.get(pos).getContent(), Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
         return convertView;
     }

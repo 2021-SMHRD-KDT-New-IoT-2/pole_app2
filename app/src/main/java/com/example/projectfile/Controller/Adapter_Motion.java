@@ -50,11 +50,11 @@ public class Adapter_Motion extends BaseAdapter {
         TextView content = (TextView) convertView.findViewById(R.id.content);
         TextView day = (TextView) convertView.findViewById(R.id.day);
 
-        MotionVO bVO = list.get(position);
+        MotionVO motionVO = list.get(position);
 
-        sensor_value.setText(bVO.getMotion()+"");
-        content.setText(bVO.getContent()+"");
-        day.setText(bVO.getDay());
+        sensor_value.setText(motionVO.getMotion()+"");
+        content.setText(motionVO.getContent()+"");
+        day.setText(motionVO.getDay());
 
         return convertView;
     }

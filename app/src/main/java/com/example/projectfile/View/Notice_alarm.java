@@ -36,6 +36,8 @@ import java.util.Map;
 
 public class Notice_alarm extends AppCompatActivity {
 
+
+    String ip = "http://172.30.1.22:8087/AndroidServer";
     Button btn_tilt,btn_motion,btn_impact;
     ListView lv_tilt,lv_motion,lv_impact;
     InputMethodManager imm;
@@ -136,7 +138,7 @@ public class Notice_alarm extends AppCompatActivity {
         // Volley Lib 새로운 요청객체 생성
         queue = Volley.newRequestQueue(this);
         // 서버에 요청할 주소(cmd : ipconfig, eclips : servers : HTTP/1.1)
-        String url = "http://121.147.0.157:8087/AndroidServer/kgwList";
+        String url = ip+"/kgwList";
 
         // 요청 문자열 저장
         stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
@@ -195,7 +197,7 @@ public class Notice_alarm extends AppCompatActivity {
         // Volley Lib 새로운 요청객체 생성
         queue = Volley.newRequestQueue(this);
         // 서버에 요청할 주소(cmd : ipconfig, eclips : servers : HTTP/1.1)
-        String url = "http://121.147.0.157:8087/AndroidServer/kgwList";
+        String url = ip+"/kgwList";
 
         // 요청 문자열 저장
         stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
@@ -254,7 +256,7 @@ public class Notice_alarm extends AppCompatActivity {
         // Volley Lib 새로운 요청객체 생성
         queue = Volley.newRequestQueue(this);
         // 서버에 요청할 주소(cmd : ipconfig, eclips : servers : HTTP/1.1)
-        String url = "http://121.147.0.157:8087/AndroidServer/kgwList";
+        String url = ip+"/kgwList";
 
         // 요청 문자열 저장
         stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
