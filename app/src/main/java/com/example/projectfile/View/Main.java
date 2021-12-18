@@ -14,13 +14,12 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.projectfile.Controller.List_Adapter;
 import com.example.projectfile.Model.ListVO;
 import com.example.projectfile.R;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements TextWatcher{
+public class Main extends AppCompatActivity implements TextWatcher{
 
     ImageButton btn_search, btn_plus, showDialog;
     ArrayList<ListVO> items = new ArrayList<ListVO>();
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements TextWatcher{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mainactivity);
+        setContentView(R.layout.main);
 
 //        List_Adapter listAdapter;
 //        listAdapter = new List_Adapter();
@@ -80,17 +79,16 @@ public class MainActivity extends AppCompatActivity implements TextWatcher{
         btn_plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, List2.class);
+                Intent intent = new Intent(Main.this, List2.class);
                 startActivity(intent);
                 finish();
             }
         });
 
-
         showDialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Thread.class);
+                Intent intent = new Intent(Main.this, Thread.class);
                 startActivity(intent);
                 finish();
             }

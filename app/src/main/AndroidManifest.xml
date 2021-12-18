@@ -19,7 +19,7 @@
             android:exported="false"
             android:theme="@android:style/Theme.Dialog" />
         <activity
-            android:name=".View.MainActivity"
+            android:name=".View.Main"
             android:exported="false" /> <!-- <activity -->
         <!-- android:name=".MainActivity2" -->
         <!-- android:exported="false" /> -->

@@ -58,7 +58,7 @@ public class Thread extends AppCompatActivity {
         btn_close2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Thread.this, MainActivity.class);
+                Intent intent = new Intent(Thread.this, Main.class);
                 startActivity(intent);
                 finish();
             }
