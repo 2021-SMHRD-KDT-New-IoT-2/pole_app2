@@ -30,7 +30,7 @@ public class List_Adapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return listViewItemList.size(); //
+        return listViewItemList.size();
     }
 
     @Override
@@ -49,7 +49,7 @@ public class List_Adapter extends BaseAdapter {
         TextView business = (TextView) convertView.findViewById(R.id.business);
         TextView location = (TextView) convertView.findViewById(R.id.location);
 
-        ListVO listViewItem = listViewItemList.get(position); //
+        ListVO listViewItem = listViewItemList.get(position);
 
         number.setText(listViewItem.getNumber());
         business.setText(listViewItem.getBusiness());
@@ -73,7 +73,7 @@ public class List_Adapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        return listViewItemList.get(position); //
+        return listViewItemList.get(position);
     }
 
     //여기도

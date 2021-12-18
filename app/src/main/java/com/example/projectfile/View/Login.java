@@ -44,7 +44,7 @@ public class Login extends AppCompatActivity {
                 String id = edt_id.getText().toString();
                 String pw = edt_pw.getText().toString();
                 if(id.equals("smart")&&pw.equals("1234")){
-                    Intent intent = new Intent(Login.this, List.class);
+                    Intent intent = new Intent(Login.this, MainActivity.class);
                     intent.putExtra("msg", id);
                     startActivity(intent);
                     finish();

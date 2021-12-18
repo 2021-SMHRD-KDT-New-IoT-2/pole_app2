@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.List">
+    tools:context=".View.MainActivity">
 
     <TextView
         android:id="@+id/tv_list"
@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_search" />
 
     <ImageView
         android:id="@+id/img1"
@@ -39,25 +39,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo1" />
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:queryHint="검색어를 입력해주세요"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img1" />
-
     <ImageButton
         android:id="@+id/showDialog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/btn_plus"
         app:layout_constraintStart_toEndOf="@+id/btn_plus"
         app:layout_constraintTop_toTopOf="@+id/btn_plus"
-        app:srcCompat="@android:drawable/ic_popup_reminder" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_notifications_active_24" />
 
     <ImageButton
         android:id="@+id/btn_plus"
@@ -68,5 +60,26 @@
         app:layout_constraintStart_toEndOf="@+id/tv_list"
         app:layout_constraintTop_toTopOf="@+id/tv_list"
         app:srcCompat="@android:drawable/ic_input_add" />
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="검색어를 입력해주세요"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img1" />
+
+    <ImageButton
+        android:id="@+id/btn_search"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_search"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
