@@ -135,7 +135,7 @@ public class Login extends AppCompatActivity {
 
                         Emp_infoVO info = new Emp_infoVO();
 
-                        Intent intent = new Intent(Login.this, List.class);
+                        Intent intent = new Intent(Login.this, Main.class);
                         intent.putExtra("info", info);
                         startActivity(intent);
 

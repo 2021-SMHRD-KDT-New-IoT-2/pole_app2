@@ -1,61 +1,61 @@
 package com.example.projectfile.Model;
 
 public class List2VO {
-    String number2;
-    String business2;
-    String location2;
-    String remark;
+    private String id;
+    private String location;
+    private String transformers;
+    private String manager;
 
-    public List2VO(String number2, String business2, String location2, String remark) {
-        this.number2 = number2;
-        this.business2 = business2;
-        this.location2 = location2;
-        this.remark = remark;
+    public List2VO(String id, String location, String transformers, String manager) {
+        this.id = id;
+        this.location = location;
+        this.transformers = transformers;
+        this.manager = manager;
     }
 
     public List2VO() {
 
     }
 
-    public String getNumber2() {
-        return number2;
+    public String getId() {
+        return id;
     }
 
-    public void setNumber2(String number2) {
-        this.number2 = number2;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getBusiness2() {
-        return business2;
+    public String getLocation() {
+        return location;
     }
 
-    public void setBusiness2(String business2) {
-        this.business2 = business2;
+    public void setLocation(String location) {
+        this.location = location;
     }
 
-    public String getLocation2() {
-        return location2;
+    public String getTransformers() {
+        return transformers;
     }
 
-    public void setLocation2(String location2) {
-        this.location2 = location2;
+    public void setTransformers(String transformers) {
+        this.transformers = transformers;
     }
 
-    public String getRemark() {
-        return remark;
+    public String getManager() {
+        return manager;
     }
 
-    public void setRemark(String remark) {
-        this.remark = remark;
+    public void setManager(String manager) {
+        this.manager = manager;
     }
 
     @Override
     public String toString() {
         return "List2VO{" +
-                "number2='" + number2 + '\'' +
-                ", business2='" + business2 + '\'' +
-                ", location2='" + location2 + '\'' +
-                ", remark='" + remark + '\'' +
+                "id='" + id + '\'' +
+                ", location='" + location + '\'' +
+                ", transformers='" + transformers + '\'' +
+                ", manager='" + manager + '\'' +
                 '}';
     }
 }
