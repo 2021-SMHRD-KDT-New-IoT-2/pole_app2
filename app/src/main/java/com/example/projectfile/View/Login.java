@@ -28,6 +28,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.projectfile.Model.Emp_infoVO;
 import com.example.projectfile.R;
 
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -107,48 +108,41 @@ public class Login extends AppCompatActivity {
         // Volley Lib 새로운 요청객체 생성
         queue = Volley.newRequestQueue(this);
         // 서버에 요청할 주소
-        String url = "http://127.0.0.1:8087/AndroidServer/LoginService";
+        String url = "http://192.168.70.228:8087/team/LoginService_and";
 
         // 요청 문자열 저장
         stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             // 응답데이터를 받아오는 곳
             @Override
             public void onResponse(String response) {
-                /*Log.v("resultValue",response);*/
+                Log.v("resultValue", response);
                 if(response.equals("fail")){
                     Toast.makeText(getApplicationContext(), "로그인 실패", Toast.LENGTH_SHORT).show();
-                }else{
-                    // json 타입 문자열을 json 객체로 변환해주는 코드
+                }else {
                     try {
                         JSONObject jsonObject = new JSONObject(response);
                         String emp_id = jsonObject.getString("emp_id");
                         String emp_pw = jsonObject.getString("emp_pw");
                         String emp_name = jsonObject.getString("emp_name");
+                        String emp_office = jsonObject.getString("emp_office");
                         String emp_phone = jsonObject.getString("emp_phone");
-                        String emp_joindate = jsonObject.getString("emp_joindate");
-                        String admin_yesno = jsonObject.getString("admin_yesno");
+                        String emp_yesno = jsonObject.getString("emp_yesno");
 
-                        Log.v("resultValue",emp_id + "/" + emp_pw + "/" + emp_name +
-                                "/" + emp_phone + "/" + emp_joindate + "/" + admin_yesno);
 
-                        Emp_infoVO emp_infoVO = new Emp_infoVO(emp_id, emp_pw, emp_name, emp_phone,
-                                emp_joindate, admin_yesno);
+                        Log.v("resultValue", emp_id + "/" + emp_pw + "/" + emp_name
+                                + "/" + emp_office + "/" + emp_phone + "/" + emp_yesno);
+
+
+                        Emp_infoVO info = new Emp_infoVO();
 
                         Intent intent = new Intent(Login.this, List.class);
-                        intent.putExtra("emp_infoVO", emp_infoVO);
+                        intent.putExtra("info", info);
                         startActivity(intent);
-
 
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-        /*        try {
-                    JSONObject object = new JSONObject(response);
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }*/
             }
         }, new Response.ErrorListener() {
             // 서버와의 연동 에러시 출력
