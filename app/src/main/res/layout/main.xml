@@ -20,14 +20,14 @@
         app:layout_constraintTop_toTopOf="@+id/img1" />
 
     <ListView
-        android:id="@+id/listView"
+        android:id="@+id/pole_listview"
         android:layout_width="400dp"
         android:layout_height="400dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="208dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_search" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/img1"
@@ -40,46 +40,25 @@
         app:srcCompat="@drawable/logo1" />
 
     <ImageButton
-        android:id="@+id/showDialog"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/show_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:background="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_plus"
-        app:layout_constraintStart_toEndOf="@+id/btn_plus"
-        app:layout_constraintTop_toTopOf="@+id/btn_plus"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_baseline_notifications_active_24" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_addPole"
+        app:layout_constraintStart_toEndOf="@+id/btn_addPole"
+        app:layout_constraintTop_toTopOf="@+id/btn_addPole"
+        app:srcCompat="@android:drawable/ic_popup_reminder"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/btn_plus"
+        android:id="@+id/btn_addPole"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/tv_list"
         app:layout_constraintStart_toEndOf="@+id/tv_list"
         app:layout_constraintTop_toTopOf="@+id/tv_list"
-        app:srcCompat="@android:drawable/ic_input_add" />
-
-    <EditText
-        android:id="@+id/edt_search"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="검색어를 입력해주세요"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img1" />
-
-    <ImageButton
-        android:id="@+id/btn_search"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="@+id/edt_search"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/edt_search"
-        app:srcCompat="@android:drawable/ic_search_category_default" />
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
