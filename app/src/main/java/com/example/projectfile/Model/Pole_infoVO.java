@@ -1,6 +1,8 @@
 package com.example.projectfile.Model;
 
-public class pole_infoVO {
+import java.io.Serializable;
+
+public class Pole_infoVO implements Serializable {
 
     private String pole_code;
     private String mac_code;
@@ -153,7 +155,7 @@ public class pole_infoVO {
                 '}';
     }
 
-    public pole_infoVO(String pole_code, String mac_code, String pole_height, String pole_addr, String pole_date, String emp_id, String transformer_yn, String pole_com, String pole_high, String pole_down, String pole_coment, String pole_eday, String pole_level, String pole_office) {
+    public Pole_infoVO(String pole_code, String mac_code, String pole_height, String pole_addr, String pole_date, String emp_id, String transformer_yn, String pole_com, String pole_high, String pole_down, String pole_coment, String pole_eday, String pole_level, String pole_office) {
         this.pole_code = pole_code;
         this.mac_code = mac_code;
         this.pole_height = pole_height;
@@ -170,7 +172,13 @@ public class pole_infoVO {
         this.pole_office = pole_office;
     }
 
-    public pole_infoVO(){
+    public Pole_infoVO(String pole_code, String pole_addr, String pole_office) {
+        this.pole_code = pole_code;
+        this.pole_addr = pole_addr;
+        this.pole_office = pole_office;
+    }
+
+    public Pole_infoVO(){
 
     }
 

@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.example.projectfile.R;
 
-public class List2 extends Activity {
+public class add_Pole extends Activity {
 
     TextView tv_enrollment, tv_id, tv_location, tv_transformers, tv_manager;
     EditText edt_number, edt_location, edt_transformers, edt_manager;
@@ -39,7 +39,7 @@ public class List2 extends Activity {
         btn_previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(List2.this, Main.class);
+                Intent intent = new Intent(add_Pole.this, Main.class);
                 startActivity(intent);
                 finish();
             }
