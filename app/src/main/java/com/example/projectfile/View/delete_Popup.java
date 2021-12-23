@@ -59,6 +59,7 @@ public class delete_Popup extends Activity {
 
 
 
+
         btn_close_p.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
