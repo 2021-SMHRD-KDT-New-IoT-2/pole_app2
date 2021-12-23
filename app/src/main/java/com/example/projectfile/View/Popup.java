@@ -22,7 +22,7 @@ public class Popup extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.popup);
+        setContentView(R.layout.delete_popup);
 
         tv = findViewById(R.id.tv_pop_up_p1);
         btn_close = findViewById(R.id.btn_close_p1);

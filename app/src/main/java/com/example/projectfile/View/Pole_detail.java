@@ -110,9 +110,10 @@ public class Pole_detail extends Activity {
         btn_delete_d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Pole_detail.this, Main.class);
+                Intent intent = new Intent(Pole_detail.this, delete_Popup.class);
+                intent.putExtra("pole_code", code);
                 startActivity(intent);
-                sendRequest();
+                //sendRequest();
                 finish();
 
             }

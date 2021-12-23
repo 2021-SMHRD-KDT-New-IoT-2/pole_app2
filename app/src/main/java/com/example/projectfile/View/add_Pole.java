@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -45,6 +47,9 @@ public class add_Pole extends AppCompatActivity {
     // client를 판별하는 값
     private String TAG = "main";
 
+    InputMethodManager imm;
+
+
 
 
 
@@ -69,6 +74,8 @@ public class add_Pole extends AppCompatActivity {
         swc_pole_down = findViewById(R.id.swc_pole_down_a);
 
 
+        // 키보드 제어 (키보드 보이기)
+        imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE); // 입력 방법을 관리
 
 
         swc_transformer_yn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

@@ -1,4 +1,3 @@
-/*
 package com.example.projectfile.View;
 
 import android.app.Activity;
@@ -37,7 +36,7 @@ public class delete_Popup extends Activity {
     private String TAG = "main";
 
 
-
+    String code = "";
     TextView tv_pop_up_p;
     Button btn_close_p, btn_delete_p;
 
@@ -45,7 +44,7 @@ public class delete_Popup extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.popup);
+        setContentView(R.layout.delete_popup);
 
         tv_pop_up_p = findViewById(R.id.tv_pop_up_p);
         btn_close_p = findViewById(R.id.btn_close_p);
@@ -54,26 +53,18 @@ public class delete_Popup extends Activity {
 
 
 
-     */
-/*   //코드추가
         Intent intent = getIntent();
         String a = intent.getStringExtra("text");
-        if(a.equals("1")){
-            tv.setText("00번 전신주에 기울기 변화가 감지되었습니다.");
-        } else if (a.equals("2")){
-            tv.setText("00번 전신주에 센서값 변화가 감지되었습니다.");
-        } else if(a.equals("3")){
-            tv.setText("00번 전신주에 충격이 감지되었습니다.");
-        }*//*
-
-
+        code = intent.getStringExtra("pole_code");
 
 
 
         btn_close_p.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(delete_Popup.this, Pole_detail.class);
                 finish();
+                startActivity(intent);
             }
 
         });
@@ -81,10 +72,10 @@ public class delete_Popup extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(delete_Popup.this, Notice_alarm.class);
-                tv_pop_up_p.setText(intent.getStringExtra("pole_code"));
+               /* .setText(intent.getStringExtra("pole_code"));*/
                 sendRequest();
-                startActivity(intent);
-                finish();
+                /*startActivity(intent);
+                finish();*/
             }
         });
     }
@@ -108,13 +99,12 @@ public class delete_Popup extends Activity {
                 finish();
                 // 데이터를 수정된 상태로 보내줌?
 
-        */
-/*        try {
+     /*   try {
                     JSONObject object = new JSONObject(response);
 
                 } catch (JSONException e) {
                     e.printStackTrace();
-                }*//*
+                }*/
 
             }
         }, new Response.ErrorListener() {
@@ -122,6 +112,7 @@ public class delete_Popup extends Activity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 error.printStackTrace();
+
             }
         }) {
             @Override //response를 UTF8로 변경해주는 소스코드
@@ -143,7 +134,8 @@ public class delete_Popup extends Activity {
             protected Map<String, String> getParams() throws AuthFailureError {
 
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("pole_code", tv_pop_up_p.getText().toString());
+                //params.put("pole_code", tv_pop_up_p.getText().toString());
+                params.put("pole_code", code);
 
                 return params;
             }
@@ -153,4 +145,4 @@ public class delete_Popup extends Activity {
 
 
     }
-}*/
+}

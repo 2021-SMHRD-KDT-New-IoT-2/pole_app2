@@ -25,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
+        android:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/tv_list"
         app:layout_constraintStart_toEndOf="@+id/tv_list"
         app:layout_constraintTop_toTopOf="@+id/tv_list"
@@ -43,7 +44,7 @@
 
     <EditText
         android:id="@+id/edt_search"
-        android:layout_width="351dp"
+        android:layout_width="406dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
         android:ems="10"
@@ -51,7 +52,7 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img1" />
 
@@ -60,7 +61,7 @@
         android:layout_width="413dp"
         android:layout_height="37dp"
         android:layout_marginTop="72dp"
-        android:background="#3F51B5"
+        android:background="#4D62D8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -119,23 +120,16 @@
                 android:textColor="#FBF4F4"
                 android:textSize="14sp"
                 android:textStyle="bold" />
+
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <SearchView
-        android:layout_width="46dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="356dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/show_dialog"
-        app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
         android:id="@+id/show_dialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
+        android:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/btn_addPole"
         app:layout_constraintStart_toEndOf="@+id/btn_addPole"
         app:layout_constraintTop_toTopOf="@+id/btn_addPole"
@@ -152,5 +146,15 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_list" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="43dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_search"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_search"
+        app:layout_constraintTop_toTopOf="@+id/edt_search"
+        app:srcCompat="@drawable/ic_baseline_search_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
