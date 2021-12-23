@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -29,12 +30,14 @@ import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class add_Pole extends AppCompatActivity {
+public class update_Pole extends AppCompatActivity {
                                 // 팝업 쓸려면 Activity
 
-    private Button btn_cancel, btn_add;
-    private EditText edt_pole_code, edt_pole_height, edt_pole_addr, edt_pole_office, edt_emp_id, edt_pole_date;
-    private Switch swc_transformer_yn, swc_pole_com, swc_pole_high, swc_pole_down;
+    private Button btn_cancel_u, btn_update_u;
+    private EditText edt_pole_height_u, edt_pole_addr_u, edt_pole_office_u,
+            edt_emp_id_u, edt_pole_date_u;
+    private TextView tv_pole_code_u;
+    private Switch swc_transformer_yn_u, swc_pole_com_u, swc_pole_high_u, swc_pole_down_u;
     private String check1 = "N", check2 = "N", check3 = "N", check4 = "N";
 
 
@@ -52,26 +55,29 @@ public class add_Pole extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.addpole);
+        setContentView(R.layout.updatepole);
 
-        btn_cancel = findViewById(R.id.btn_close_a);
-        btn_add = findViewById(R.id.btn_update_a);
-        edt_pole_code = findViewById(R.id.tv_pole_code_a);
-        edt_pole_height = findViewById(R.id.edt_pole_height_a);
-        edt_pole_addr = findViewById(R.id.edt_pole_addr_a);
-        edt_pole_office = findViewById(R.id.edt_pole_office_a);
-        edt_emp_id = findViewById(R.id.edt_emp_id_a);
-        edt_pole_date = findViewById(R.id.edt_pole_date_a);
+        Intent intent = getIntent();
 
-        swc_transformer_yn = findViewById(R.id.swc_transformer_yn_a);
-        swc_pole_com = findViewById(R.id.swc_pole_com_a);
-        swc_pole_high = findViewById(R.id.swc_pole_high_a);
-        swc_pole_down = findViewById(R.id.swc_pole_down_a);
+        tv_pole_code_u = findViewById(R.id.tv_pole_code_u);
+        btn_cancel_u = findViewById(R.id.btn_close_u);
+        btn_update_u = findViewById(R.id.btn_update_u);
+
+        /*edt_pole_height_u = findViewById(R.id.edt_pole_height_u);
+        edt_pole_addr_u = findViewById(R.id.edt_pole_addr_u);*/
+        edt_pole_office_u = findViewById(R.id.edt_pole_office_u);
+        edt_emp_id_u = findViewById(R.id.edt_emp_id_u);
+       /* edt_pole_date_u = findViewById(R.id.edt_pole_date_u);*/
+
+        swc_transformer_yn_u = findViewById(R.id.swc_transformer_yn_u);
+        swc_pole_com_u = findViewById(R.id.swc_pole_com_u);
+        swc_pole_high_u = findViewById(R.id.swc_pole_high_u);
+        swc_pole_down_u = findViewById(R.id.swc_pole_down_u);
+
+        tv_pole_code_u.setText(intent.getStringExtra("pole_code"));
 
 
-
-
-        swc_transformer_yn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        swc_transformer_yn_u.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
@@ -81,7 +87,7 @@ public class add_Pole extends AppCompatActivity {
                 }
             }
         });
-        swc_pole_com.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        swc_pole_com_u.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
@@ -91,7 +97,7 @@ public class add_Pole extends AppCompatActivity {
                 }
             }
         });
-        swc_pole_high.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        swc_pole_high_u.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
@@ -101,7 +107,7 @@ public class add_Pole extends AppCompatActivity {
                 }
             }
         });
-        swc_pole_down.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        swc_pole_down_u.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
@@ -117,22 +123,22 @@ public class add_Pole extends AppCompatActivity {
 
 
 
-        btn_cancel.setOnClickListener(new View.OnClickListener() {
+        btn_cancel_u.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(add_Pole.this, Main.class);
+                Intent intent = new Intent(update_Pole.this, Main.class);
                 startActivity(intent);
                 finish();
             }
         });
 
 
-        btn_add.setOnClickListener(new View.OnClickListener() {
+        btn_update_u.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*Intent intent = new Intent(add_Pole.this, Main.class);
+                Intent intent = new Intent(update_Pole.this, Main.class);
                 startActivity(intent);
-                finish();*/
+                finish();
                 sendRequest();
             }
         });
@@ -145,7 +151,7 @@ public class add_Pole extends AppCompatActivity {
                 // Volley Lib 새로운 요청객체 생성
                 queue = Volley.newRequestQueue(this);
                 // 서버에 요청할 주소
-                String url = "http://172.30.1.11:8087/team1/assignpole_and";
+                String url = "http://172.30.1.11:8087/team1/updatePole_and";
 
                 // 요청 문자열 저장
                 stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
@@ -154,7 +160,7 @@ public class add_Pole extends AppCompatActivity {
                     public void onResponse(String response) {
                         Log.v("resultValue", response);
 
-                        Intent intent = new Intent(add_Pole.this, Main.class);
+                        Intent intent = new Intent(update_Pole.this, Main.class);
                         startActivity(intent);
                         finish();
                         // 데이터를 수정된 상태로 보내줌?
@@ -192,12 +198,10 @@ public class add_Pole extends AppCompatActivity {
                     protected Map<String, String> getParams() throws AuthFailureError {
 
                         Map<String, String> params = new HashMap<String, String>();
-                        params.put("pole_code", edt_pole_code.getText().toString());
-                        params.put("pole_height", edt_pole_height.getText().toString());
-                        params.put("pole_addr", edt_pole_addr.getText().toString());
-                        params.put("pole_office", edt_pole_office.getText().toString());
-                        params.put("emp_id", edt_emp_id.getText().toString());
-                        params.put("pole_date", edt_pole_date.getText().toString());
+
+                        params.put("pole_code", tv_pole_code_u.getText().toString());
+                        params.put("pole_office", edt_pole_office_u.getText().toString());
+                        params.put("emp_id", edt_emp_id_u.getText().toString());
                         params.put("transformer_yn", check1);
                         params.put("pole_com", check2);
                         params.put("pole_high", check3);

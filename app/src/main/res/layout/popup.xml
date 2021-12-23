@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tv"
+            android:id="@+id/tv_pole_height_d1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"

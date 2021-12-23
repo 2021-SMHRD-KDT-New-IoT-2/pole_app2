@@ -14,13 +14,9 @@
         android:theme="@style/Theme.Projectfile"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".View.Enrollment"
-            android:exported="false"
-            android:theme="@android:style/Theme.Dialog" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Dialog" />
+            android:name=".View.add_Pole"
+            android:exported="false"/>
+            <!--android:theme="@android:style/Theme.Dialog"--><!--주석 풀면 팝업-->
         <activity
             android:name=".View.Main"
             android:exported="false" /> <!-- <activity -->
@@ -39,6 +35,14 @@
         <activity
             android:name=".View.Login"
             android:exported="false" />
+        <activity
+            android:name=".View.update_Pole"
+            android:exported="false" />
+        <activity
+            android:name=".View.Pole_detail"
+            android:exported="false"
+            android:theme="@android:style/Theme.Dialog"/>
+
         <activity
             android:name=".View.Start"
             android:exported="true">

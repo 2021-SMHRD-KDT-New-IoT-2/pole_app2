@@ -9,12 +9,14 @@ public class Pole_infoVO implements Serializable {
     private String pole_height;
     private String pole_addr;
     private String pole_date;
+
     private String emp_id;
     private String transformer_yn;
     private String pole_com;
     private String pole_high;
     private String pole_down;
-    private String pole_coment;
+
+    private String pole_comment;
     private String pole_eday;
     private String pole_level;
     private String pole_office;
@@ -103,12 +105,12 @@ public class Pole_infoVO implements Serializable {
         this.pole_down = pole_down;
     }
 
-    public String getPole_coment() {
-        return pole_coment;
+    public String getPole_comment() {
+        return pole_comment;
     }
 
-    public void setPole_coment(String pole_coment) {
-        this.pole_coment = pole_coment;
+    public void setPole_comment(String pole_comment) {
+        this.pole_comment = pole_comment;
     }
 
     public String getPole_eday() {
@@ -148,14 +150,14 @@ public class Pole_infoVO implements Serializable {
                 ", pole_com='" + pole_com + '\'' +
                 ", pole_high='" + pole_high + '\'' +
                 ", pole_down='" + pole_down + '\'' +
-                ", pole_coment='" + pole_coment + '\'' +
+                ", pole_comment='" + pole_comment + '\'' +
                 ", pole_eday='" + pole_eday + '\'' +
                 ", pole_level='" + pole_level + '\'' +
                 ", pole_office='" + pole_office + '\'' +
                 '}';
     }
 
-    public Pole_infoVO(String pole_code, String mac_code, String pole_height, String pole_addr, String pole_date, String emp_id, String transformer_yn, String pole_com, String pole_high, String pole_down, String pole_coment, String pole_eday, String pole_level, String pole_office) {
+    public Pole_infoVO(String pole_code, String mac_code, String pole_height, String pole_addr, String pole_date, String emp_id, String transformer_yn, String pole_com, String pole_high, String pole_down, String pole_comment, String pole_eday, String pole_level, String pole_office) {
         this.pole_code = pole_code;
         this.mac_code = mac_code;
         this.pole_height = pole_height;
@@ -166,7 +168,7 @@ public class Pole_infoVO implements Serializable {
         this.pole_com = pole_com;
         this.pole_high = pole_high;
         this.pole_down = pole_down;
-        this.pole_coment = pole_coment;
+        this.pole_comment = pole_comment;
         this.pole_eday = pole_eday;
         this.pole_level = pole_level;
         this.pole_office = pole_office;

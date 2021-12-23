@@ -24,7 +24,7 @@ public class Popup extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.popup);
 
-        tv = findViewById(R.id.tv);
+        tv = findViewById(R.id.tv_pole_height_d1);
         btn_close = findViewById(R.id.btn_close);
         btn_confirm = findViewById(R.id.btn_confirm);
 

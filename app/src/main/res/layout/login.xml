@@ -8,7 +8,7 @@
     tools:context=".View.Login">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_emp_id_d1"
         android:layout_width="268dp"
         android:layout_height="462dp"
         android:background="#F2FFFFFF"

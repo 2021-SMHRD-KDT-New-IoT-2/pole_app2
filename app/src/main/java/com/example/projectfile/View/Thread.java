@@ -38,7 +38,7 @@ public class Thread extends AppCompatActivity {
     //클라이언트를 판별하는 값
     private String TAG = "main";
 
-    String ip = "http://172.30.1.22:8087/AndroidServer";
+    String ip = "http://172.30.1.11:8087/team1/";
 
     boolean popupCheck = true;
     int tilt_check=0;

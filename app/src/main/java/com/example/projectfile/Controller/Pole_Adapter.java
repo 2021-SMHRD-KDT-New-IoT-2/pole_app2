@@ -1,3 +1,4 @@
+/*
 package com.example.projectfile.Controller;
 
 import android.content.Context;
@@ -45,9 +46,9 @@ public class Pole_Adapter extends BaseAdapter {
             convertView = inflater.inflate(R.layout.pole_info_list,parent,false);
         }
 
-        TextView tv_pole_code = convertView.findViewById(R.id.tv_pole_code);
-        TextView tv_pole_office = convertView.findViewById(R.id.tv_pole_office);
-        TextView tv_pole_addr = convertView.findViewById(R.id.tv_pole_adrr);
+        TextView tv_pole_code = convertView.findViewById(R.id.tv_pole_code_L);
+        TextView tv_pole_office = convertView.findViewById(R.id.tv_pole_office_L);
+        TextView tv_pole_addr = convertView.findViewById(R.id.tv_pole_addr_L);
 
 
         Pole_infoVO item = items.get(position);
@@ -59,4 +60,8 @@ public class Pole_Adapter extends BaseAdapter {
 
         return convertView;
     }
+
+
+
 }
+*/

@@ -6,32 +6,32 @@
         <entry key="..\:/Users/smhrd/AndroidStudioProjects/Projectfile/app/src/main/res/layout/item.xml" value="0.10925925925925926" />
         <entry key="..\:/Users/smhrd/AndroidStudioProjects/Projectfile/app/src/main/res/layout/notice.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/smhrd/AndroidStudioProjects/Projectfile/app/src/main/res/layout/row.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/smhrd/AndroidStudioProjects/Team_pole/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/smhrd/AndroidStudioProjects/Team_pole/app/src/main/res/layout/activity_main2.xml" value="0.1" />
-        <entry key="..\:/Users/smhrd/AndroidStudioProjects/Team_pole/app/src/main/res/layout/enrollment.xml" value="0.33" />
-        <entry key="..\:/Users/smhrd/AndroidStudioProjects/Team_pole/app/src/main/res/layout/item.xml" value="0.33" />
-        <entry key="..\:/Users/smhrd/AndroidStudioProjects/Team_pole/app/src/main/res/layout/list.xml" value="0.33" />
-        <entry key="..\:/Users/smhrd/AndroidStudioProjects/Team_pole/app/src/main/res/layout/login.xml" value="0.33" />
-        <entry key="..\:/Users/smhrd/AndroidStudioProjects/Team_pole/app/src/main/res/layout/main_menu.xml" value="0.1" />
-        <entry key="..\:/Users/smhrd/AndroidStudioProjects/Team_pole/app/src/main/res/layout/menu.xml" value="0.25" />
-        <entry key="..\:/Users/smhrd/AndroidStudioProjects/Team_pole/app/src/main/res/layout/notice.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/smhrd/AndroidStudioProjects/Team_pole/app/src/main/res/layout/item.xml" value="0.20364583333333333" />
         <entry key="..\:/Users/smhrd/AndroidStudioProjects/Team_pole/app/src/main/res/layout/popup.xml" value="0.33" />
-        <entry key="..\:/Users/smhrd/AndroidStudioProjects/Team_pole/app/src/main/res/layout/row.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/smhrd/AndroidStudioProjects/Team_pole/app/src/main/res/layout/start.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/smhrd/AndroidStudioProjects/Team_pole/app/src/main/res/layout/thread.xml" value="0.36614583333333334" />
-        <entry key="app/src/main/res/layout/enrollment.xml" value="0.11" />
-        <entry key="app/src/main/res/layout/item.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/list.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/list2.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/login.xml" value="0.10866261398176291" />
-        <entry key="app/src/main/res/layout/main.xml" value="0.12259371833839919" />
-        <entry key="app/src/main/res/layout/main_List.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/notice.xml" value="0.11" />
-        <entry key="app/src/main/res/layout/pole_info_list.xml" value="0.21902998755370548" />
-        <entry key="app/src/main/res/layout/popup.xml" value="0.10866261398176291" />
-        <entry key="app/src/main/res/layout/row.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/start.xml" value="0.10866261398176291" />
-        <entry key="app/src/main/res/layout/thread.xml" value="0.10866261398176291" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/drawable-v24/ic_baseline_add_box_24.xml" value="0.17447916666666666" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/drawable-v24/ic_baseline_notification_important_24.xml" value="0.17447916666666666" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.17447916666666666" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/drawable/abc_ic_clear_mtrl_alpha.xml" value="0.1" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/drawable/ic_baseline_add_box_24.xml" value="0.17447916666666666" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/drawable/ic_baseline_notifications_active_24.xml" value="0.17447916666666666" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.17447916666666666" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/activity_main2.xml" value="0.17" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/addpole.xml" value="0.25" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/addpole1.xml" value="0.14235055724417425" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/addpole2.xml" value="0.25" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/list2.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/login.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/main.xml" value="0.25" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/notice.xml" value="0.25" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/pole_detail.xml" value="0.25" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/pole_info_list.xml" value="0.25" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/pole_info_list2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/popup.xml" value="0.25" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/row.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/start.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/thread.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/smhrd/Desktop/pole_app2/app/src/main/res/layout/updatepole.xml" value="0.33" />
       </map>
     </option>
   </component>

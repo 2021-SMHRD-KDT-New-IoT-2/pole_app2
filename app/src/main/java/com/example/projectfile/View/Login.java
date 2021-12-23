@@ -25,6 +25,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+
 import com.example.projectfile.Model.Emp_infoVO;
 import com.example.projectfile.R;
 
@@ -108,7 +109,7 @@ public class Login extends AppCompatActivity {
         // Volley Lib 새로운 요청객체 생성
         queue = Volley.newRequestQueue(this);
         // 서버에 요청할 주소
-        String url = "http://192.168.70.228:8087/team/LoginService_and";
+        String url = "http://172.30.1.11:8087/team1/LoginService_and";
 
         // 요청 문자열 저장
         stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
@@ -138,6 +139,7 @@ public class Login extends AppCompatActivity {
                         Intent intent = new Intent(Login.this, Main.class);
                         intent.putExtra("info", info);
                         startActivity(intent);
+                        finish();
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -177,6 +179,8 @@ public class Login extends AppCompatActivity {
         stringRequest.setTag(TAG);
         queue.add(stringRequest);
     }
+
+
 
 
 
