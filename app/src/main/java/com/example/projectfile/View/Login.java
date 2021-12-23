@@ -42,7 +42,7 @@ public class Login extends AppCompatActivity {
     private ImageView imageView;
     private TextView textView, textView2;
     private EditText edt_id, edt_pw;
-    private Button btn_login;
+    private Button btn_login, btn_emp_add;
     private CheckBox checkBox;
 
     // 웹통신에 필요한 3가지
@@ -65,6 +65,7 @@ public class Login extends AppCompatActivity {
         edt_pw = findViewById(R.id.edt_pw);
         checkBox = findViewById(R.id.checkBox);
         btn_login = findViewById(R.id.btn_login);
+        btn_emp_add = findViewById(R.id.btn_emp_add);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +74,14 @@ public class Login extends AppCompatActivity {
 
             }
         });
+        btn_emp_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendRequest();
+            }
+        });
+
+
 
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -140,6 +149,23 @@ public class Login extends AppCompatActivity {
                         intent.putExtra("info", info);
                         startActivity(intent);
                         finish();
+
+
+
+/*
+                        // 회원가입용 나중에 삭제
+                        public String getLoginID(){
+                            return getApplicationContext().getSharedPreferences("LoginInfo", Context.MODE_PRIVATE).getString("LoginID", "아이디정보 없음");
+                        }
+
+
+                        public void successLogin(String id) {
+                            SharedPreferences spf = getSharedPreferences("LoginInfo", MODE_PRIVATE);
+                            spf.edit().putString("LoginID", id).commit();
+                        }*/
+
+
+
 
                     } catch (JSONException e) {
                         e.printStackTrace();
