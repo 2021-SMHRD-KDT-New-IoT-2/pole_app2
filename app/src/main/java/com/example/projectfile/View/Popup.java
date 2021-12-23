@@ -24,9 +24,12 @@ public class Popup extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.popup);
 
-        tv = findViewById(R.id.tv_pole_height_d1);
-        btn_close = findViewById(R.id.btn_close);
-        btn_confirm = findViewById(R.id.btn_confirm);
+        tv = findViewById(R.id.tv_pop_up_p1);
+        btn_close = findViewById(R.id.btn_close_p1);
+        btn_confirm = findViewById(R.id.btn_delete_p1);
+
+
+
 
         //코드추가
         Intent intent = getIntent();
@@ -38,6 +41,9 @@ public class Popup extends Activity {
         } else if(a.equals("3")){
             tv.setText("00번 전신주에 충격이 감지되었습니다.");
         }
+
+
+
 
         btn_close.setOnClickListener(new View.OnClickListener() {
             @Override

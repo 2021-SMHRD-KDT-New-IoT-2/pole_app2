@@ -15,7 +15,8 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".View.add_Pole"
-            android:exported="false"/>
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
             <!--android:theme="@android:style/Theme.Dialog"--><!--주석 풀면 팝업-->
         <activity
             android:name=".View.Main"
