@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.android.volley.AuthFailureError;
@@ -39,11 +40,12 @@ public class Pole_detail extends Activity {
 
 
 
-    Button btn_close_d, btn_update_d,btn_delete_d;
-    Button btn_close_p, btn_delete_p;
+    Button btn_update_d,btn_delete_d;
+    ImageButton btn_close_d;
+
     TextView tv_pole_code_d, tv_pole_height_d, tv_pole_addr_d, tv_pole_date_d, tv_emp_id_d,
             tv_transformer_yn_d, tv_pole_com_d, tv_pole_high_d, tv_pole_down_d,
-            tv_pole_comment_d, tv_pole_level_d, tv_pole_office_d;
+            tv_pole_comment_d,  tv_pole_office_d;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +64,7 @@ public class Pole_detail extends Activity {
         tv_pole_down_d = findViewById(R.id.tv_pole_down_d);
         tv_pole_comment_d = findViewById(R.id.tv_pole_comment_d);
 
-        tv_pole_level_d = findViewById(R.id.tv_pole_level_d);
+
         tv_pole_office_d = findViewById(R.id.tv_pole_office_d);
 
         tv_pole_code_d.setText(intent.getStringExtra("pole_code"));
@@ -75,7 +77,7 @@ public class Pole_detail extends Activity {
         tv_pole_high_d.setText(intent.getStringExtra("pole_high"));
         tv_pole_down_d.setText(intent.getStringExtra("pole_down"));
         tv_pole_comment_d.setText(intent.getStringExtra("pole_comment"));
-        tv_pole_level_d.setText(intent.getStringExtra("pole_level"));
+
         tv_pole_office_d.setText(intent.getStringExtra("pole_office"));
 
 
@@ -85,8 +87,8 @@ public class Pole_detail extends Activity {
         btn_close_d = findViewById(R.id.btn_close_d);
         btn_update_d = findViewById(R.id.btn_update_d);
         btn_delete_d = findViewById(R.id.btn_delete_d);
-        btn_close_p = findViewById(R.id.btn_close_p1);
-        btn_delete_p = findViewById(R.id.btn_delete_p1);
+
+        btn_delete_d = findViewById(R.id.btn_delete_d);
 
         btn_close_d.setOnClickListener(new View.OnClickListener() {
             @Override

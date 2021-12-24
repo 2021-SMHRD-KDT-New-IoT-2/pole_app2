@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="#FFFFFF"
+    android:background="#393939"
     tools:context=".View.Popup">
 
     <LinearLayout
-        android:layout_width="307dp"
-        android:layout_height="151dp"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,31 +24,30 @@
             android:fontFamily="@font/nanumgothicextrabold"
             android:gravity="center"
             android:text="삭제 하시겠습니까?"
-            android:textColor="#000000" />
+            android:textColor="#FFFFFF" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.6"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_weight="1.9"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_close_p"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#dfeaff"
                 android:fontFamily="@font/nanumgothicbold"
-                android:insetLeft="6dp"
-                android:insetRight="6dp"
                 android:text="취소" />
 
             <Button
                 android:id="@+id/btn_delete_p"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:backgroundTint="#dfeaff"
                 android:fontFamily="@font/nanumgothicbold"
-                android:insetRight="6dp"
                 android:text="삭제" />
         </LinearLayout>
     </LinearLayout>

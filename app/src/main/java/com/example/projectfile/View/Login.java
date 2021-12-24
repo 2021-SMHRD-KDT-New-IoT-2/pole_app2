@@ -43,7 +43,7 @@ import java.util.Map;
 public class Login extends AppCompatActivity {
 
     private ImageView imageView;
-    private TextView textView, textView2;
+/*    private TextView textView, textView2;*/
     private EditText edt_id, edt_pw;
     private Button btn_login, btn_emp_add;
     private CheckBox checkBox;
@@ -62,8 +62,8 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.login);
 
         imageView = findViewById(R.id.imageView);
-        textView = findViewById(R.id.textView);
-        textView2 = findViewById(R.id.textView2);
+/*        textView = findViewById(R.id.textView);
+        textView2 = findViewById(R.id.textView2);*/
         edt_id = findViewById(R.id.edt_id);
         edt_pw = findViewById(R.id.edt_pw);
         checkBox = findViewById(R.id.checkBox);

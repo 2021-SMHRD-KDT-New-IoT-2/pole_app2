@@ -8,69 +8,73 @@
 
     <TextView
         android:id="@+id/tv_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/nanumgothicextrabold"
-        android:text="전주 목록"
-        android:textColor="#000000"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/img1"
+        android:gravity="center"
+        android:text="전주 통합 관리 시스템"
+        android:textColor="#302C2C"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/show_dialog"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/img1"
-        app:layout_constraintTop_toTopOf="@+id/img1"
-        app:layout_constraintVertical_bias="0.576" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btn_addPole"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
         android:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_list"
-        app:layout_constraintStart_toEndOf="@+id/tv_list"
-        app:layout_constraintTop_toTopOf="@+id/tv_list"
+        android:tint="#7C7C7C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.985"
+        app:layout_constraintStart_toEndOf="@+id/edt_search"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_input_add"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/img1"
-        android:layout_width="83dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo1" />
 
     <EditText
         android:id="@+id/edt_search"
-        android:layout_width="406dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="130dp"
+        android:backgroundTint="#393939"
         android:ems="10"
         android:fontFamily="@font/nanumgothicregular"
         android:hint="찾으시는 전주를 검색하세요"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:paddingLeft="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="413dp"
         android:layout_height="37dp"
-        android:layout_marginTop="72dp"
-        android:background="#4D62D8"
+        android:background="#393939"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_list">
+        app:layout_constraintTop_toBottomOf="@+id/edt_search">
 
         <LinearLayout
             android:layout_width="413dp"
             android:layout_height="36dp"
+            android:backgroundTint="#393939"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -82,7 +86,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
                 android:layout_weight="1"
-                android:background="#4D62D8"
+                android:background="#393939"
                 android:fontFamily="@font/nanumgothicbold"
                 android:gravity="center"
                 android:text="위험도"
@@ -94,7 +98,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
                 android:layout_weight="5"
-                android:background="#4D62D8"
+                android:background="#393939"
                 android:fontFamily="@font/nanumgothicbold"
                 android:gravity="center"
                 android:text="코드"
@@ -106,7 +110,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
                 android:layout_weight="7"
-                android:background="#4D62D8"
+                android:background="#393939"
                 android:fontFamily="@font/nanumgothicbold"
                 android:gravity="center"
                 android:text="주소"
@@ -119,10 +123,10 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="1dp"
                 android:layout_weight="2"
-                android:background="#4D62D8"
+                android:background="#393939"
                 android:fontFamily="@font/nanumgothicbold"
                 android:gravity="center"
-                android:text="사업소"
+                android:text="관할 지역"
                 android:textColor="#FBF4F4"
                 android:textSize="14sp" />
 
@@ -131,31 +135,30 @@
 
     <ImageButton
         android:id="@+id/show_dialog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_addPole"
-        app:layout_constraintStart_toEndOf="@+id/btn_addPole"
-        app:layout_constraintTop_toTopOf="@+id/btn_addPole"
-        app:layout_constraintVertical_bias="0.0"
+        android:tint="#7C7C7C"
+        app:layout_constraintStart_toEndOf="@+id/img1"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_popup_reminder"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ListView
         android:id="@+id/M_pole_listview"
-        android:layout_width="413dp"
-        android:layout_height="483dp"
-        android:layout_marginTop="108dp"
+        android:layout_width="411dp"
+        android:layout_height="476dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_list" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="43dp"
-        android:layout_height="40dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         app:layout_constraintEnd_toEndOf="@+id/edt_search"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/edt_search"

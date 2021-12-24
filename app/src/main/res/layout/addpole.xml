@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
+    android:backgroundTint="#393939"
     tools:context=".View.add_Pole">
 
 
@@ -25,7 +26,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="567dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3"
+        tools:layout_editor_absoluteX="-16dp" />
+
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -43,7 +55,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="6dp"
-            android:background="#4D62D8"
+            android:background="#393939"
             android:fontFamily="@font/nanumgothicextrabold"
             android:gravity="center"
             android:text="전주 등록"
@@ -61,7 +73,7 @@
             android:fontFamily="@font/nanumgothicbold"
             android:gravity="center|left"
             android:text="전주번호 부여"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
         <EditText
@@ -72,13 +84,17 @@
             android:layout_marginTop="6dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="6dp"
-            android:ems="10"
+            android:background="@drawable/border"
 
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
             android:fontFamily="@font/nanumgothicregular"
             android:gravity="center|left"
             android:hint="전주번호를 입력해주세요"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:textColorHint="#ACA9A9"
             android:textSize="14sp" />
 
         <TextView
@@ -91,7 +107,7 @@
             android:fontFamily="@font/nanumgothicbold"
             android:gravity="center|left"
             android:text="전주 높이"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
         <EditText
@@ -102,12 +118,16 @@
             android:layout_marginTop="6dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="6dp"
+            android:background="@drawable/border"
+            android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:fontFamily="@font/nanumgothicregular"
             android:gravity="center|left"
             android:hint="전주 높이를 입력해주세요"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:textColorHint="#ACA9A9"
             android:textSize="14sp" />
 
         <TextView
@@ -120,7 +140,7 @@
             android:fontFamily="@font/nanumgothicbold"
             android:gravity="center|left"
             android:text="전주 주소"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
         <EditText
@@ -131,12 +151,16 @@
             android:layout_marginTop="6dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="6dp"
+            android:background="@drawable/border"
+            android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:fontFamily="@font/nanumgothicregular"
             android:gravity="center|left"
             android:hint="전주 주소를 입력해주세요"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:textColorHint="#ACA9A9"
             android:textSize="14sp" />
 
         <TextView
@@ -149,7 +173,7 @@
             android:fontFamily="@font/nanumgothicbold"
             android:gravity="center|left"
             android:text="관할 지역"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
         <EditText
@@ -160,12 +184,16 @@
             android:layout_marginTop="6dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="6dp"
+            android:background="@drawable/border"
+            android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:fontFamily="@font/nanumgothicregular"
             android:gravity="center|left"
             android:hint="사업소를 입력해주세요"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:textColorHint="#ACA9A9"
             android:textSize="14sp" />
 
         <TextView
@@ -178,7 +206,7 @@
             android:fontFamily="@font/nanumgothicbold"
             android:gravity="center|left"
             android:text="담당자 사원번호"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
         <EditText
@@ -189,12 +217,16 @@
             android:layout_marginTop="6dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="6dp"
+            android:background="@drawable/border"
+            android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:fontFamily="@font/nanumgothicregular"
             android:gravity="center|left"
             android:hint="사원번호를 입력해주세요"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:textColorHint="#ACA9A9"
             android:textSize="14sp" />
 
         <TextView
@@ -208,7 +240,7 @@
             android:fontFamily="@font/nanumgothicbold"
             android:gravity="center|left"
             android:text="전주 설치 일자"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
         <EditText
@@ -219,18 +251,22 @@
             android:layout_marginTop="6dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="6dp"
+            android:background="@drawable/border"
+            android:backgroundTint="#FFFFFF"
             android:ems="10"
+            android:fontFamily="@font/nanumgothicregular"
             android:gravity="center|left"
             android:hint="설치 일자를 입력해주세요"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:textSize="14sp"
-            android:fontFamily="@font/nanumgothicregular" />
+            android:paddingLeft="10dp"
+            android:textColorHint="#ACA9A9"
+            android:textSize="14sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="25dp"
             android:layout_marginBottom="6dp"
             android:gravity="center"
             android:orientation="horizontal">
@@ -243,7 +279,8 @@
                 android:gravity="center"
                 android:text="변압기"
 
-                android:thumbTint="#4D62D8"
+                android:textColor="#1B1A1A"
+                android:thumbTint="#989696"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <Switch
@@ -253,7 +290,8 @@
                 android:fontFamily="@font/nanumgothicbold"
                 android:gravity="center"
                 android:text="통신선"
-                android:thumbTint="#4D62D8"
+                android:textColor="#1B1A1A"
+                android:thumbTint="#989696"
                 tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
             <Switch
@@ -263,7 +301,8 @@
                 android:fontFamily="@font/nanumgothicbold"
                 android:gravity="center"
                 android:text="고압선"
-                android:thumbTint="#4D62D8"
+                android:textColor="#1B1A1A"
+                android:thumbTint="#989696"
                 tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
             <Switch
@@ -273,49 +312,52 @@
                 android:fontFamily="@font/nanumgothicbold"
                 android:gravity="center"
                 android:text="저압선"
-                android:thumbTint="#4D62D8"
+                android:textColor="#1B1A1A"
+                android:thumbTint="#989696"
                 tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
             android:gravity="center"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_close_a"
                 android:layout_width="150dp"
-                android:layout_height="48dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="6dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginRight="6dp"
                 android:layout_marginBottom="6dp"
-                android:backgroundTint="#D73F51B5"
+                android:backgroundTint="#dfeaff"
                 android:fontFamily="@font/nanumgothicbold"
                 android:gravity="center"
                 android:insetRight="3dp"
                 android:text="취소하기"
-                android:textColor="#FFFFFF" />
+                android:textColor="#201E1E" />
 
 
             <Button
                 android:id="@+id/btn_update_a"
                 android:layout_width="150dp"
-                android:layout_height="48dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="6dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginRight="6dp"
                 android:layout_marginBottom="6dp"
-                android:backgroundTint="#D73F51B5"
+                android:backgroundTint="#dfeaff"
                 android:fontFamily="@font/nanumgothicbold"
                 android:gravity="center"
                 android:insetLeft="3dp"
                 android:text="등록하기"
-                android:textColor="#FFFFFF" />
+                android:textColor="#201E1E" />
         </LinearLayout>
 
     </LinearLayout>
+
     <!--</ScrollView>
 -->
     <!-- </androidx.constraintlayout.widget.ConstraintLayout>

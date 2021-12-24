@@ -68,7 +68,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/nanumgothicbold"
                 android:gravity="center"
-                android:text="사업소"
+                android:text="관할 지역"
                 android:textColor="#191818"
                 android:textSize="16sp"
                 android:textStyle="bold" />

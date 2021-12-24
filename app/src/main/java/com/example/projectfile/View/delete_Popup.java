@@ -63,7 +63,7 @@ public class delete_Popup extends Activity {
         btn_close_p.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(delete_Popup.this, Pole_detail.class);
+                Intent intent = new Intent(delete_Popup.this, Main.class);
                 finish();
                 startActivity(intent);
             }
