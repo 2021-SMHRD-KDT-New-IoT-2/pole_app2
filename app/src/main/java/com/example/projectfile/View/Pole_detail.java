@@ -124,6 +124,9 @@ public class Pole_detail extends Activity {
 
 
 
+
+
+
 /*
         chart = findViewById(R.id.pole_linechart);
         
@@ -165,6 +168,8 @@ public class Pole_detail extends Activity {
 */
 
     }
+
+
 
 
 
