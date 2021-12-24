@@ -78,6 +78,7 @@ public class update_Pole extends AppCompatActivity {
         swc_pole_down_u = findViewById(R.id.swc_pole_down_u);
 
         tv_pole_code_u.setText(intent.getStringExtra("pole_code"));
+        edt_pole_office_u.setText(intent.getStringExtra("pole_office"));
 
 
         swc_transformer_yn_u.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
