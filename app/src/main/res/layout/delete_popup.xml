@@ -21,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:fontFamily="@font/nanumgothicextrabold"
             android:gravity="center"
             android:text="삭제 하시겠습니까?"
             android:textColor="#000000" />
@@ -36,6 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="@font/nanumgothicbold"
                 android:insetLeft="6dp"
                 android:insetRight="6dp"
                 android:text="취소" />
@@ -45,6 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="@font/nanumgothicbold"
                 android:insetRight="6dp"
                 android:text="삭제" />
         </LinearLayout>
